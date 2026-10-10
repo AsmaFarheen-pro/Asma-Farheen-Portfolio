@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="Projectstylesheet.css">
+</head>
+
+<body>
+
+    <section class="projects-section">
+
+       
+
+
+        <section class="asset-gallery-section" aria-labelledby="asset-gallery-title">
+            <h2 class="asset-gallery-title" id="asset-gallery-title">Creative Work</h2>
+            <p class="projects-description">
+                Explore the diverse range of creative projects I've worked on, from graphic design to digital marketing. Each project reflects my dedication to quality, showcasing my ability to bring ideas to life through various mediums.
+            </p>
+            <div class="asset-gallery">
+                <figure class="asset-gallery-item"><img src="assets1/bhogi.jpg" alt="Bhogi festival artwork"></figure>
+                <figure class="asset-gallery-item"><img src="assets1/br celebrationss.png" alt="BR celebrations artwork"></figure>
+                <figure class="asset-gallery-item"><img src="assets1/BR weekendsss.png" alt="BR weekend artwork"></figure>
+                <figure class="asset-gallery-item"><img src="assets1/Celebrate Kanuma with joy, relaxation, and loved ones 🐄✨Festivals feel complete at BeZawada Res.jpg" alt="Kanuma festival celebration artwork"></figure>
+                <figure class="asset-gallery-item"><img src="assets1/Celebrate this Easter with joy, renewal, and beautiful moments with your loved ones 🌸✨Make your.jpg" alt="Easter celebration artwork"></figure>
+                <figure class="asset-gallery-item"><img src="assets1/EAWU_BHOGI.jpg" alt="EAWU Bhogi artwork"></figure>
+                <figure class="asset-gallery-item"><img src="assets1/EAWU_KANUMA.jpg" alt="EAWU Kanuma artwork"></figure>
+                <figure class="asset-gallery-item"><img src="assets1/EAWU_SANKRANTI.jpg" alt="EAWU Sankranti artwork"></figure>
+                <figure class="asset-gallery-item"><img src="assets1/Grow smarter1.png" alt="Grow Smarter campaign artwork"></figure>
+                <figure class="asset-gallery-item"><img src="assets1/HOLI_EAWU.jpg" alt="EAWU Holi artwork"></figure>
+                <figure class="asset-gallery-item"><img src="assets1/New year, new places, new memories waiting to be made 🌄✨Start 2026 with peace, luxury, and natu.jpg" alt="New year travel campaign artwork"></figure>
+                <figure class="asset-gallery-item"><img src="assets1/New yesr_drkcareer.jpg" alt="Dr. K career campaign artwork"></figure>
+                <figure class="asset-gallery-item"><img src="assets1/One beautiful year of warmth, celebrations, and unforgettable stays 🤍✨From serene mornings to j.jpg" alt="One-year celebration campaign artwork"></figure>
+                <figure class="asset-gallery-item"><img src="assets1/paint your career.jpg" alt="Paint Your Career campaign artwork"></figure>
+                <figure class="asset-gallery-item"><img src="assets1/REPUBLICC_EAWU.jpg" alt="EAWU Republic Day artwork"></figure>
+                <figure class="asset-gallery-item"><img src="assets1/republic_dayy.jpg" alt="Republic Day artwork"></figure>
+                <figure class="asset-gallery-item"><img src="assets1/sankranti.jpg" alt="Sankranti festival artwork"></figure>
+                <figure class="asset-gallery-item"><img src="assets1/stromg career.jpg" alt="Strong Career campaign artwork"></figure>
+                <figure class="asset-gallery-item"><img src="assets1/This Holi, celebrate with colors, laughter, and grand celebrations at your favorite destination .jpg" alt="Holi celebration campaign artwork"></figure>
+                <figure class="asset-gallery-item"><img src="assets1/Travel. Explore. Relax. 🌍✨Celebrate Tourism Day by choosing experiences that matter at BeZawada.jpg" alt="Tourism Day travel campaign artwork"></figure>
+                <figure class="asset-gallery-item"><img src="assets1/Turn your ordinary day into a summer celebration ☀️✨Enjoy great food, peaceful surroundings, and.jpg" alt="Summer celebration campaign artwork"></figure>
+                <figure class="asset-gallery-item"><img src="assets1/Vijayawada, your perfect weekend getaway is closer than you think 🌿✨Unwind, relax, and recharge.jpg" alt="Vijayawada weekend getaway campaign artwork"></figure>
+                <figure class="asset-gallery-item"><img src="assets1/wishes.jpg" alt="Festival wishes artwork"></figure>
+                <figure class="asset-gallery-item"><img src="assets1/Wishing you a Sankranthi filled with joy, prosperity &amp; peace 🌾✨Celebrate the festival amidst na.jpg" alt="Sankranthi wishes campaign artwork"></figure>
+                <figure class="asset-gallery-item"><img src="assets1/Your wedding celebrations deserve an experience ✨From energetic Sangeet nights 🎶 to crazy Bache.jpg" alt="Wedding celebration campaign artwork"></figure>
+                 <figure class="asset-gallery-item"><img src="assets/drk_sankrathi.jpg" alt="Wedding celebration campaign artwork"></figure>            
+            </div>
+        </section>
+
+        <dialog class="image-viewer" aria-label="Expanded artwork">
+            <button class="image-viewer-close" type="button" aria-label="Close expanded artwork">&times;</button>
+            <button class="image-viewer-nav image-viewer-previous" type="button" aria-label="Previous image">&#8249;</button>
+            <img class="image-viewer-image" src="" alt="">
+            <button class="image-viewer-nav image-viewer-next" type="button" aria-label="Next image">&#8250;</button>
+            <p class="image-viewer-count" aria-live="polite"></p>
+        </dialog>
+
+        <!-- <div class="github-btn-wrapper">
+            <a href="#" class="github-btn">Explore on GitHub</a>
+        </div> -->
+
+
+        <footer>© Asma Farheen</footer>
+
+    </section>
+
+    <script>
+        const imageViewer = document.querySelector('.image-viewer');
+        const expandedImage = imageViewer.querySelector('.image-viewer-image');
+        const closeViewer = imageViewer.querySelector('.image-viewer-close');
+        const previousButton = imageViewer.querySelector('.image-viewer-previous');
+        const nextButton = imageViewer.querySelector('.image-viewer-next');
+        const imageCount = imageViewer.querySelector('.image-viewer-count');
+        const galleryImages = Array.from(document.querySelectorAll('.asset-gallery-item img'));
+        let currentImageIndex = 0;
+
+        function showImage(index) {
+            currentImageIndex = (index + galleryImages.length) % galleryImages.length;
+            const image = galleryImages[currentImageIndex];
+            expandedImage.src = image.src;
+            expandedImage.alt = image.alt;
+            imageCount.textContent = `${currentImageIndex + 1} / ${galleryImages.length}`;
+        }
+
+        galleryImages.forEach((image, index) => {
+            image.tabIndex = 0;
+            image.setAttribute('role', 'button');
+            image.setAttribute('aria-label', `View ${image.alt} larger`);
+
+            const openViewer = () => {
+                showImage(index);
+                imageViewer.showModal();
+            };
+
+            image.addEventListener('click', openViewer);
+            image.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    openViewer();
+                }
+            });
+        });
+
+        closeViewer.addEventListener('click', () => imageViewer.close());
+        previousButton.addEventListener('click', () => showImage(currentImageIndex - 1));
+        nextButton.addEventListener('click', () => showImage(currentImageIndex + 1));
+        imageViewer.addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowLeft') {
+                event.preventDefault();
+                showImage(currentImageIndex - 1);
+            } else if (event.key === 'ArrowRight') {
+                event.preventDefault();
+                showImage(currentImageIndex + 1);
+            }
+        });
+
+        let touchStartX = 0;
+        expandedImage.addEventListener('touchstart', (event) => {
+            touchStartX = event.changedTouches[0].screenX;
+        }, { passive: true });
+        expandedImage.addEventListener('touchend', (event) => {
+            const swipeDistance = event.changedTouches[0].screenX - touchStartX;
+            if (Math.abs(swipeDistance) > 50) {
+                showImage(currentImageIndex + (swipeDistance < 0 ? 1 : -1));
+            }
+        }, { passive: true });
+
+        imageViewer.addEventListener('click', (event) => {
+            if (event.target === imageViewer) imageViewer.close();
+        });
+    </script>
+</body>
+
+</html>

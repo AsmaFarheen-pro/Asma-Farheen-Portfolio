@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asma Farheen_About</title>
+    <link rel="stylesheet" href="Aboutstylesheet.css">
+</head>
+
+<body class="about-body">
+
+    <!-- 🔶 TOP BANNER -->
+    <div class="about-banner">
+        <img src="assets/Pastel Creative Workspace Flatlay.png" alt="Profile" class="about-banner">
+        <!-- You will replace this background image later -->
+    </div>
+
+    <!-- 🟣 PROFILE PIC -->
+    <div class="profile-pic-wrapper">
+        <img src="assets/image professional.png" alt="Profile" class="profile-pic">
+    </div>
+
+    <!-- 🌸 ABOUT CARD -->
+
+    <section class="about-section">
+        <div class="about-container">
+
+            <!-- LEFT COLUMN -->
+            <div class="about-left">
+                <h2>
+                    I'm <span>Asma Farheen</span>.
+                    <br>Deep passion to work with Designing and technologies.
+                    <br> <span>I Create</span> | <span>I Fix</span> | <span>I publish</span>.
+                </h2>
+
+                <p class="about-text">
+                    I have a growing interest in graphic design and digital creativity.
+                    I'm someone who enjoys creativity, learning new things, and improving myself step by step. I have a
+                    strong interest in graphic design, especially typography, visual composition, and creating
+                    meaningful designs. Eagerly skillup in branding and visual communication.</p>
+
+                <!-- SKILLS -->
+                <div class="skill-tags">
+                    <span>#Graphic Design</span>
+                    <span>#Social media posters</span>
+                    <span>#Logo Design</span>
+                    <span>#affinity</span>
+                    <span>#Canva</span>
+                    <span>#Video Editing</span>
+                    <span>#pixel</span>
+                     <span>#vector</span>
+                    <span>#Learner</span>
+                    <span>#Creative</span> 
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="edu-column">
+                <!-- EDUCATION CARD -->
+                <div class="edu-card">
+                    <div class="edu-icon">🎓</div>
+
+                    <h3 class="edu-title">Education</h3>
+                    <p class="edu-sub">Academic Foundation</p>
+
+                    <h2 class="edu-degree">B.Sc. Computer Science and Multimedia</h2>
+                    <a href="#" class="edu-college">Government College for Women (A)</a>
+                    <p class="edu-year">Class of 2023</p>
+                    <div class="edu-line"></div>
+
+                    <!-- STATS UNDER EDUCATION -->
+                    <div class="about-stats">
+                        <div class="stat-box">
+                            <h3>2023</h3>
+                            <p>Graduate Year</p>
+                        </div>
+
+                        <div class="stat-box">
+                            <h3>7+</h3>
+                            <p>Months Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <script>
+
+        // AUTO ACTIVE SCROLL FOR SKILLS
+        const skillContainer = document.querySelector('.skills-carousel');
+        const skillCards = document.querySelectorAll('.skill-card');
+
+        function activateSkillCard() {
+            let center = skillContainer.scrollLeft + skillContainer.offsetWidth / 2;
+            let closest = null;
+            let minDist = Infinity;
+
+            skillCards.forEach(card => {
+                const cardCenter = card.offsetLeft + card.offsetWidth / 2;
+                const dist = Math.abs(center - cardCenter);
+
+                if (dist < minDist) {
+                    minDist = dist;
+                    closest = card;
+                }
+            });
+
+            skillCards.forEach(c => c.classList.remove('active'));
+            if (closest) closest.classList.add('active');
+        }
+
+        skillContainer.addEventListener('scroll', activateSkillCard);
+        activateSkillCard();
+
+
+
+    </script>
+
+</body>
+
+</html>
