@@ -1,126 +1,317 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asma Farheen_About</title>
-    <link rel="stylesheet" href="Aboutstylesheet.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Meet Asma Farheen, a graphic designer exploring visual communication, branding, and digital creativity." />
+    <title>About Asma Farheen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Nunito:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="Aboutstylesheet.css" />
+    <link rel="icon" type="image/png" href="ICONS/about_tagicon.png" />
 </head>
 
 <body class="about-body">
+    <header class="about-header">
+        <a class="about-brand" href="index.html">Asma Farheen.</a>
+        <a class="back-link" href="index.html">
+            <span aria-hidden="true">&#8592;</span>
+            Back to portfolio
+        </a>
+    </header>
 
-    <!-- 🔶 TOP BANNER -->
-    <div class="about-banner">
-        <img src="assets/Pastel Creative Workspace Flatlay.png" alt="Profile" class="about-banner">
-        <!-- You will replace this background image later -->
+    <div class="about-cover" aria-hidden="true">
+        <img src="assets/about_cover.png" alt="" />
     </div>
 
-    <!-- 🟣 PROFILE PIC -->
-    <div class="profile-pic-wrapper">
-        <img src="assets/image professional.png" alt="Profile" class="profile-pic">
-    </div>
-
-    <!-- 🌸 ABOUT CARD -->
-
-    <section class="about-section">
-        <div class="about-container">
-
-            <!-- LEFT COLUMN -->
-            <div class="about-left">
-                <h2>
-                    I'm <span>Asma Farheen</span>.
-                    <br>Deep passion to work with Designing and technologies.
-                    <br> <span>I Create</span> | <span>I Fix</span> | <span>I publish</span>.
-                </h2>
-
+    <main class="about-main">
+        <section class="about-intro" aria-labelledby="about-title">
+            <div class="about-copy">
+                <p class="eyebrow">A LITTLE ABOUT ME</p>
+                <h1 id="about-title">Hi, I’m <span>Asma Farheen</span>.</h1>
+                <p class="about-role">
+                    Graphic designer
+                </p>
+                <p class="about-mantra">I create | I fix | I publish</p>
                 <p class="about-text">
-                    I have a growing interest in graphic design and digital creativity.
-                    I'm someone who enjoys creativity, learning new things, and improving myself step by step. I have a
-                    strong interest in graphic design, especially typography, visual composition, and creating
-                    meaningful designs. Eagerly skillup in branding and visual communication.</p>
-
-                <!-- SKILLS -->
-                <div class="skill-tags">
-                    <span>#Graphic Design</span>
-                    <span>#Social media posters</span>
-                    <span>#Logo Design</span>
-                    <span>#affinity</span>
-                    <span>#Canva</span>
-                    <span>#Video Editing</span>
-                    <span>#pixel</span>
-                     <span>#vector</span>
-                    <span>#Learner</span>
-                    <span>#Creative</span> 
+                    I’m a creative designer with a growing interest in graphic design and digital creativity. I enjoy
+                    exploring typography, visual composition, and meaningful storytelling. With experience in social
+                    media creatives, promotional designs, and logo concepts, I enjoy bringing ideas to life through
+                    thoughtful design. I’m continuously building my skills in branding and visual communication.
+                </p>
+                <div class="about-actions">
+                    <a class="action-primary" href="project.html">Explore my work <span
+                            aria-hidden="true">&#8599;</span></a>
+                    <a class="action-secondary" href="mailto:af.officelog@gmail.com">Get in touch</a>
                 </div>
             </div>
 
-            <!-- RIGHT COLUMN -->
-            <div class="edu-column">
-                <!-- EDUCATION CARD -->
-                <div class="edu-card">
-                    <div class="edu-icon">🎓</div>
+            <figure class="profile-figure">
+                <img class="profile-photo" src="assets/image professional.png" alt="Portrait of Asma Farheen"
+                    width="1242" height="1242" />
+                <!-- <figcaption>
+            <span>Asma Farheen</span>
+            <span>Graphic design &amp; multimedia</span>
+          </figcaption> -->
+            </figure>
+        </section>
 
-                    <h3 class="edu-title">Education</h3>
-                    <p class="edu-sub">Academic Foundation</p>
+        <section class="about-details" aria-label="Skills and education">
+            <div class="skills-block" id="skills">
+                <p class="eyebrow">WHAT I ENJOY</p>
+                <h2>Creative tools</h2>
+                <p class="details-copy">
+                    Tools I use to shape visual ideas and edit short-form videos.
+                </p>
+                <div class="tool-groups">
+                    <section class="tool-group" aria-labelledby="graphic-tools-title">
+                        <h3 id="graphic-tools-title">Graphic Design</h3>
+                        <ul class="tool-list">
+                            <li><span class="tool-check" aria-hidden="true"></span><span>Affinity Designer</span></li>
+                            <li><span class="tool-check" aria-hidden="true"></span><span>Canva</span></li>
+                        </ul>
+                    </section>
+                    <section class="tool-group" aria-labelledby="video-tools-title">
+                        <h3 id="video-tools-title">Video Editing</h3>
+                        <ul class="tool-list">
+                            <li>
+                                <span class="tool-check" aria-hidden="true"></span>
+                                <span class="tool-name">Adobe Express Editor<span
+                                        class="tool-level">Experienced</span></span>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
 
-                    <h2 class="edu-degree">B.Sc. Computer Science and Multimedia</h2>
-                    <a href="#" class="edu-college">Government College for Women (A)</a>
-                    <p class="edu-year">Class of 2023</p>
-                    <div class="edu-line"></div>
-
-                    <!-- STATS UNDER EDUCATION -->
-                    <div class="about-stats">
-                        <div class="stat-box">
-                            <h3>2023</h3>
-                            <p>Graduate Year</p>
+            <div class="education-block" id="education">
+                <p class="eyebrow">MY FOUNDATION</p>
+                <h2>Education</h2>
+                <div class="education-entry">
+                    <h3>B.Sc. Computer Science and Multimedia</h3>
+                    <p>Government College for Women (A)</p>
+                    <div class="education-meta">
+                        <div>
+                            <span>Class</span>
+                            <strong>2023</strong>
                         </div>
-
-                        <div class="stat-box">
-                            <h3>7+</h3>
-                            <p>Months Experience</p>
+                        <div>
+                            <span>Experience</span>
+                            <strong>7+ months</strong>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-        </div>
-    </section>
+        <section class="professional-experience" aria-labelledby="experience-title">
+            <div class="experience-heading">
+                <p class="eyebrow">CAREER</p>
+                <h2 id="experience-title">Professional Experience</h2>
+            </div>
+            <div class="experience-list">
+                <article class="experience-entry">
+                    <div class="experience-primary">
+                        <p class="experience-dates"><time datetime="2025-12">12/2025</time> – <time
+                                datetime="2026-08">10/2026</time></p>
+                        <h3>Graphic Designing &amp; Digital Marketing Intern</h3>
+                    </div>
+                    <div class="experience-detail">
+                        <p class="experience-company">DRK | Digiramakrishna</p>
+                        <p class="experience-location">Vijayawada</p>
+                        <p class="experience-summary">
+                            Created 50+ promotional designs for hospitality, education, travel, and service businesses.
+                            Developed visuals with Affinity Designer and Canva, edited short-form reels, and refined
+                            work with team feedback.
+                        </p>
+                    </div>
+                </article>
+                <article class="experience-entry">
+                    <div class="experience-primary">
+                        <p class="experience-dates"><time datetime="2023-12">12/2023</time> – <time
+                                datetime="2024-07">07/2024</time></p>
+                        <h3>E-Publishing Analyst</h3>
+                    </div>
+                    <div class="experience-detail">
+                        <p class="experience-company">Apex Solution Pvt Ltd</p>
+                        <p class="experience-location">Guntur, Andhra Pradesh</p>
+                        <p class="experience-summary">
+                            Converted PDF magazines into structured HTML, including zoning, image mapping, image
+                            editing, and cleanup. Checked layouts and content for accuracy and consistency with client
+                            standards.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
 
+    <footer class="about-footer">
+        <a href="index.html">Asma Farheen.</a>
+        <span>© 2026 Asma Farheen</span>
+    </footer>
+</body>
 
+</html><!doctype html>
+<html lang="en">
 
-    <script>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Meet Asma Farheen, a graphic designer exploring visual communication, branding, and digital creativity." />
+    <title>About Asma Farheen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Nunito:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="Aboutstylesheet.css" />
+    <link rel="icon" type="image/png" href="ICONS/about_tagicon.png" />
+</head>
 
-        // AUTO ACTIVE SCROLL FOR SKILLS
-        const skillContainer = document.querySelector('.skills-carousel');
-        const skillCards = document.querySelectorAll('.skill-card');
+<body class="about-body">
+    <header class="about-header">
+        <a class="about-brand" href="index.html">Asma Farheen.</a>
+        <a class="back-link" href="index.html">
+            <span aria-hidden="true">&#8592;</span>
+            Back to portfolio
+        </a>
+    </header>
 
-        function activateSkillCard() {
-            let center = skillContainer.scrollLeft + skillContainer.offsetWidth / 2;
-            let closest = null;
-            let minDist = Infinity;
+    <div class="about-cover" aria-hidden="true">
+        <img src="assets/about_cover.png" alt="" />
+    </div>
 
-            skillCards.forEach(card => {
-                const cardCenter = card.offsetLeft + card.offsetWidth / 2;
-                const dist = Math.abs(center - cardCenter);
+    <main class="about-main">
+        <section class="about-intro" aria-labelledby="about-title">
+            <div class="about-copy">
+                <p class="eyebrow">A LITTLE ABOUT ME</p>
+                <h1 id="about-title">Hi, I’m <span>Asma Farheen</span>.</h1>
+                <p class="about-role">
+                    Graphic designer
+                </p>
+                <p class="about-mantra">I create | I fix | I publish</p>
+                <p class="about-text">
+                    I’m a creative designer with a growing interest in graphic design and digital creativity. I enjoy
+                    exploring typography, visual composition, and meaningful storytelling. With experience in social
+                    media creatives, promotional designs, and logo concepts, I enjoy bringing ideas to life through
+                    thoughtful design. I’m continuously building my skills in branding and visual communication.
+                </p>
+                <div class="about-actions">
+                    <a class="action-primary" href="project.html">Explore my work <span
+                            aria-hidden="true">&#8599;</span></a>
+                    <a class="action-secondary" href="mailto:af.officelog@gmail.com">Get in touch</a>
+                </div>
+            </div>
 
-                if (dist < minDist) {
-                    minDist = dist;
-                    closest = card;
-                }
-            });
+            <figure class="profile-figure">
+                <img class="profile-photo" src="assets/image professional.png" alt="Portrait of Asma Farheen"
+                    width="1242" height="1242" />
+                <!-- <figcaption>
+            <span>Asma Farheen</span>
+            <span>Graphic design &amp; multimedia</span>
+          </figcaption> -->
+            </figure>
+        </section>
 
-            skillCards.forEach(c => c.classList.remove('active'));
-            if (closest) closest.classList.add('active');
-        }
+        <section class="about-details" aria-label="Skills and education">
+            <div class="skills-block" id="skills">
+                <p class="eyebrow">WHAT I ENJOY</p>
+                <h2>Creative tools</h2>
+                <p class="details-copy">
+                    Tools I use to shape visual ideas and edit short-form videos.
+                </p>
+                <div class="tool-groups">
+                    <section class="tool-group" aria-labelledby="graphic-tools-title">
+                        <h3 id="graphic-tools-title">Graphic Design</h3>
+                        <ul class="tool-list">
+                            <li><span class="tool-check" aria-hidden="true"></span><span>Affinity Designer</span></li>
+                            <li><span class="tool-check" aria-hidden="true"></span><span>Canva</span></li>
+                        </ul>
+                    </section>
+                    <section class="tool-group" aria-labelledby="video-tools-title">
+                        <h3 id="video-tools-title">Video Editing</h3>
+                        <ul class="tool-list">
+                            <li>
+                                <span class="tool-check" aria-hidden="true"></span>
+                                <span class="tool-name">Adobe Express Editor<span
+                                        class="tool-level">Experienced</span></span>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
 
-        skillContainer.addEventListener('scroll', activateSkillCard);
-        activateSkillCard();
+            <div class="education-block" id="education">
+                <p class="eyebrow">MY FOUNDATION</p>
+                <h2>Education</h2>
+                <div class="education-entry">
+                    <h3>B.Sc. Computer Science and Multimedia</h3>
+                    <p>Government College for Women (A)</p>
+                    <div class="education-meta">
+                        <div>
+                            <span>Class</span>
+                            <strong>2023</strong>
+                        </div>
+                        <div>
+                            <span>Experience</span>
+                            <strong>7+ months</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="professional-experience" aria-labelledby="experience-title">
+            <div class="experience-heading">
+                <p class="eyebrow">CAREER</p>
+                <h2 id="experience-title">Professional Experience</h2>
+            </div>
+            <div class="experience-list">
+                <article class="experience-entry">
+                    <div class="experience-primary">
+                        <p class="experience-dates"><time datetime="2025-12">12/2025</time> – <time
+                                datetime="2026-08">10/2026</time></p>
+                        <h3>Graphic Designing &amp; Digital Marketing Intern</h3>
+                    </div>
+                    <div class="experience-detail">
+                        <p class="experience-company">DRK | Digiramakrishna</p>
+                        <p class="experience-location">Vijayawada</p>
+                        <p class="experience-summary">
+                            Created 50+ promotional designs for hospitality, education, travel, and service businesses.
+                            Developed visuals with Affinity Designer and Canva, edited short-form reels, and refined
+                            work with team feedback.
+                        </p>
+                    </div>
+                </article>
+                <article class="experience-entry">
+                    <div class="experience-primary">
+                        <p class="experience-dates"><time datetime="2023-12">12/2023</time> – <time
+                                datetime="2024-07">07/2024</time></p>
+                        <h3>E-Publishing Analyst</h3>
+                    </div>
+                    <div class="experience-detail">
+                        <p class="experience-company">Apex Solution Pvt Ltd</p>
+                        <p class="experience-location">Guntur, Andhra Pradesh</p>
+                        <p class="experience-summary">
+                            Converted PDF magazines into structured HTML, including zoning, image mapping, image
+                            editing, and cleanup. Checked layouts and content for accuracy and consistency with client
+                            standards.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
 
-
-    </script>
-
+    <footer class="about-footer">
+        <a href="index.html">Asma Farheen.</a>
+        <span>© 2026 Asma Farheen</span>
+    </footer>
 </body>
 
 </html>
