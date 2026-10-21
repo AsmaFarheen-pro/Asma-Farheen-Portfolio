@@ -12,7 +12,6 @@
 }
 
 body {
-  min-width: 320px;
   margin: 0;
   background: var(--surface);
   color: var(--ink);
@@ -123,6 +122,7 @@ body {
   position: relative;
   display: block;
   width: 100%;
+  margin: 0;
 }
 
 .reel-card video {
@@ -239,51 +239,29 @@ body {
   outline-offset: 2px;
 }
 
-
-/* Large screens */
 @media (max-width: 1500px) {
   .reel-gallery {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 }
 
-/* Laptops and tablets */
 @media (max-width: 1150px) {
   .reel-gallery {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 16px;
   }
 }
 
 @media (max-width: 850px) {
   .reel-gallery {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 14px;
-  }
-
-  .page-header {
-    padding: 12px 18px;
-  }
-
-  .reel-viewer {
-    width: calc(100vw - 24px);
-    padding: 48px 44px 40px;
   }
 }
 
-/* Mobile screens */
 @media (max-width: 600px) {
   .page-header {
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 10px;
-    min-height: auto;
-    padding: 12px;
-  }
-
-  .back-link {
-    min-width: 0;
-    gap: 4px;
-    font-size: 0.8rem;
+    grid-template-columns: 1fr auto;
+    gap: 10px 8px;
+    padding: 10px 12px;
   }
 
   .page-header h1 {
@@ -291,15 +269,14 @@ body {
     grid-row: 2;
     justify-self: center;
     font-size: 1.05rem;
-    text-align: center;
+  }
+
+  .back-link {
+    gap: 4px;
+    font-size: 0.8rem;
   }
 
   .gallery-nav {
-    grid-column: 2;
-    grid-row: 1;
-    justify-self: end;
-    min-width: 0;
-    max-width: 100%;
     gap: 1px;
     padding: 2px;
   }
@@ -307,26 +284,11 @@ body {
   .gallery-nav a {
     padding: 6px 7px;
     font-size: 0.72rem;
-    white-space: normal;
-    text-align: center;
   }
 
   .reels-section {
-    width: calc(100% - 24px);
-    max-width: 500px;
-    padding: 22px 0 40px;
-  }
-
-  .section-heading {
-    margin-bottom: 18px;
-  }
-
-  .section-heading h2 {
-    font-size: 1.2rem;
-  }
-
-  .section-heading p {
-    font-size: 0.85rem;
+    width: min(100% - 24px, 500px);
+    padding-top: 22px;
   }
 
   .reel-gallery {
@@ -334,85 +296,30 @@ body {
     gap: 12px;
   }
 
-  .reel-card,
-  .reel-card video {
-    min-width: 0;
-    width: 100%;
-  }
-
   .reel-card video {
     border-radius: 10px;
   }
 
   .reel-viewer {
-    width: calc(100vw - 16px);
-    max-width: 480px;
-    max-height: 95dvh;
-    padding: 44px 36px 38px;
-    border-radius: 8px;
-  }
-
-  .reel-viewer-video {
-    width: 100%;
-    max-height: calc(95dvh - 100px);
+    padding: 48px 42px 38px;
   }
 
   .reel-viewer-nav {
-    width: 30px;
-    height: 44px;
-    font-size: 2rem;
+    width: 34px;
+    height: 46px;
   }
 
   .reel-viewer-previous {
-    left: 3px;
+    left: 4px;
   }
 
   .reel-viewer-next {
-    right: 3px;
+    right: 4px;
   }
 }
 
-/* Extra-small mobile screens */
 @media (max-width: 360px) {
-  .page-header {
-    padding: 10px 8px;
-    gap: 8px;
-  }
-
-  .back-link {
-    font-size: 0.72rem;
-  }
-
-  .gallery-nav a {
-    padding: 6px 5px;
-    font-size: 0.68rem;
-  }
-
   .reel-gallery {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 8px;
-  }
-
-  .reels-section {
-    width: calc(100% - 16px);
-  }
-
-  .reel-viewer {
-    padding-right: 32px;
-    padding-left: 32px;
+    grid-template-columns: 1fr;
   }
 }
-
-/* Short mobile screens */
-@media (max-width: 600px) and (max-height: 500px) {
-  .reel-viewer {
-    max-height: 98dvh;
-    padding-top: 40px;
-    padding-bottom: 30px;
-  }
-
-  .reel-viewer-video {
-    max-height: calc(98dvh - 80px);
-  }
-}
-
